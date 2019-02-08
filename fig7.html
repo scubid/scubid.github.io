@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Title</title>
+ <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+<body>
+<script>
+ const colors = d3.scaleOrdinal(d3.schemeAccent);
+ d3.select("body").append("svg:svg")
+ .attr("width", 300)
+ .attr("height", 150)
+ .selectAll("g")
+ .data([[1, 1, 1, 1], [0.2, 0.2, 0.2, 0.2, 1.5, 1.7]])
+ .enter().append("svg:g")
+ .attr("transform", (d,i) => {
+ return "translate("+(75+(i)*150)+",75)";
+ })
+ .selectAll("path")
+ .data(d => {
+ console.log(d);
+ return d3.pie()(d);
+ })
+ .enter().append("svg:path")
+ .attr("d", d3.arc().innerRadius(0).outerRadius(70))
+ .attr("fill", (d,i) => {
+ console.log(d);
+ return colors(i);
+ });
+</script>
+</body>
+</html>
