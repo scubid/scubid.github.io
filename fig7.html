@@ -17,17 +17,7 @@
  .attr("transform", (d,i) => {
  return "translate("+(75+(i)*150)+",75)";
  })
- .selectAll("path")
- .data(d => {
- console.log(d);
- return d3.pie()(d);
- })
- .enter().append("svg:path")
- .attr("d", d3.arc().innerRadius(0).outerRadius(70))
- .attr("fill", (d,i) => {
- console.log(d);
- return colors(i);
- });
+
 </script>
 </body>
 </html>
