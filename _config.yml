@@ -1,2 +1,4 @@
 name: Sheila Cubid
 markdown: kramdown
+
+theme: jekyll-theme-midnight
