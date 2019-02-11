@@ -160,12 +160,12 @@ hr {
 	padding: 10px 0 40px 0;
 }
 .intro h1 {
-	font-size: 60px;
+	font-size: 40px;
 	font-weight: 600;
 	letter-spacing: 2px;
-	text-transform: uppercase;
+	text-transform: none;
 	margin-bottom: 20px;
-	color: #333;
+	color: #DCDCDC;
 }
 .intro p {
 	font-size: 20px;
