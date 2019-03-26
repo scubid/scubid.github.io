@@ -14,7 +14,7 @@ d3.csv("netflixshowsdata.csv", function (data) {
         myChart.assignColor("PG-13", "purple", "black", 1);
         myChart.assignColor("TV-14", "pink", "black", 1);
         myChart.assignColor("G", "green", "black", 1);
-        myChart.assignColor("R", "yellow", "black", 1);
+        myChart.assignColor("R", "red", "black", 1);
         myChart.assignColor("NR", "grey", "black", 1);
         myChart.draw();
 });
