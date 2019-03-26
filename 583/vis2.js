@@ -1,4 +1,4 @@
-var svg = dimple.newSvg("#chartContainer2", 590, 400);
+var svg = dimple.newSvg("#chartContainer", 590, 400);
 d3.csv("netflixshowsdata.csv", function (data) {
        var myChart = new dimple.chart(svg, data);
        myChart.setBounds(95, 25, 475, 335)
