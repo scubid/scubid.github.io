@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CPSC 583 Final Project</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <script type="text/javascript" src="d3.v4.js"></script>
+    <!-- jQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400,300' rel='stylesheet' type='text/css'>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            color: #525252;
+            text-align: center;
+        }
+
+        html, body {
+            width:auto;
+            height:auto;
+        }
+
+        .axis path,
+        .axis line {
+            fill: none;
+            stroke: #B3B3B3;
+            shape-rendering: crispEdges;
+        }
+        .axis text {
+            font-size: 10px;
+            fill: #6B6B6B;
+        }
+
+        .popover {
+            pointer-events: none;
+        }
+
+        .legendTitle {
+            fill: #1A1A1A;
+            color: #1A1A1A;
+            text-anchor: middle;
+            font-size: 10px;
+        }
+
+        .legendText {
+            fill: #949494;
+            text-anchor: start;
+            font-size: 9px;
+        }
+
+        .legend rect {
+            fill:white;
+            stroke:black;
+            opacity:0.8;}
+
+        @media (min-width: 500px) {
+            .col-sm-3, .col-sm-9 {
+                float: left;
+            }
+            .col-sm-9 {
+                width: 75%;
+            }
+            .col-sm-3 {
+                width: 25%;
+            }
+        }
+
+        .line {
+            fill: none;
+            stroke: steelblue;
+            stroke-width: 2px;
+        }
+
+        div.tooltip {
+            position: absolute;
+            text-align: center;
+            width: 150px;
+            height: 100px;
+            padding: 2px;
+            font: 12px sans-serif;
+            border: 0px;
+            background: lightblue;
+            border-radius: 8px;
+            pointer-events: none;
+        }
+
+        .legend{
+            float:left;
+            margin-right:1em;
+        }
+    </style>
+</head>
+<body>
+<h2>Visualization 1</h1>
+    <h3>Sheila Cubid (UCID: 10120820)</h2>
+<script src="d3.legend.js"></script>
+<div class="legend">
+    <h3>Legend</h3>
+</div>
+<script type="text/javascript" src="stackedbar.js"></script>
+
+
+</body>
+</html>
