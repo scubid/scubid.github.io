@@ -63,7 +63,7 @@ d3.csv("netflixshowsdata.csv", function (data) {
     // Color scale: give me a specie name, I return a color
     var color = d3.scaleOrdinal()
         .domain(["TV-Y", "TV-Y7","G", "PG", "PG-13", "TV-14", "TV-MA", "R", "NR" ])
-        .range([ "#EFB605", "#E58903", "#E01A25", "#C20049", "#991C71", "#66489F", "#2074A0", "#10A66E", "#7EB852"])
+        .range([ "#2074A0", "#66489F", "#10A66E", "#7EB852", "#EFB605", "#E58903", "#C20049", "#E01A25", "#A9A9A9"])
 
     var circleGroup = div.append("g")
         .attr("class", "circleWrapper");
