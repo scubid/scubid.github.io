@@ -90,14 +90,39 @@
             float:left;
             margin-right:1em;
         }
+        
+        /* basic positioning */
+        .legend { list-style: none; }
+        .legend li { float: left; margin-right: 10px; }
+        .legend span { border: 1px solid #ccc; float: left; width: 12px; height: 12px; margin: 2px; }
+        /* your colors */
+        .legend .tvy { background-color: #EFB605; }
+        .legend .tvy7 { background-color: #E58903; }
+        .legend .g { background-color: #E01A25; }
+        .legend .pg { background-color: #C20049; }
+        .legend .pg13 { background-color: #991C71; }
+        .legend .tv14 { background-color: #66489F; }
+        .legend .tvma { background-color: #2074A0; }
+        .legend .r { background-color: #10A66E; }
+        .legend .nr { background-color: #7EB852; }
     </style>
 </head>
 <body>
 <h2>Visualization 1</h1>
     <h3>Sheila Cubid (UCID: 10120820)</h2>
 <script src="d3.legend.js"></script>
-<div class="legend">
-</div>
+<ul class="legend">
+    <li><span class="tvy"></span>TV-Y</li>
+    <li><span class="tvy7"></span> TV-Y7</li>
+    <li><span class="g"></span>G</li>
+    <li><span class="pg"></span>PG</li>
+    <li><span class="pg13"></span>PG-13</li>
+    <li><span class="tv14"></span>TV-14</li>
+    <li><span class="tvma"></span>TV-MA</li>
+    <li><span class="r"></span>R</li>
+    <li><span class="nr"></span> NR</li>
+
+</ul>
 <script type="text/javascript" src="finalvis.js"></script>
 
 
