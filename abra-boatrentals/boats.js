@@ -38,6 +38,7 @@ let k6 = new Boat('KAYAK-6', true);
 let k1 = new Boat('KAYAK-1', true);
 
 // Customer constructor
+// Check this link: https://webplatform.github.io/docs/tutorials/working_with_objects_in_JavaScript/
 function Customer(name, id, status, timein, timeout) {
     this.name = name;
     this.id = id;
